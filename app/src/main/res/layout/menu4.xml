@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+    <!-- First Row -->
+    <Button
+        android:id="@+id/buttontext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableTop="@drawable/ic_textcrypt_image"
+        android:gravity="center"
+        android:text="Text"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonpass"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/buttonpass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableTop="@drawable/ic_password_image"
+        android:gravity="center"
+        android:text="Password"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttontext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_margin="8dp" />
+
+    <!-- Second Row -->
+    <Button
+        android:id="@+id/buttonfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableTop="@drawable/ic_filecrypt_image"
+        android:gravity="center"
+        android:text="ImageCrypt"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/buttontext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttondata"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/buttondata"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="FilesCrypt"
+        android:drawableTop="@drawable/ic_dataencrypt_image"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/buttonpass"
+        app:layout_constraintStart_toEndOf="@+id/buttonfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_margin="8dp" />
+
+    <!-- Third Row -->
+    <Button
+        android:id="@+id/buttoninfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="INFO"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/buttonfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonsettings"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/buttonsettings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableTop="@drawable/ic_settings_image"
+        android:gravity="center"
+        android:text="Settings"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/buttondata"
+        app:layout_constraintStart_toEndOf="@+id/buttoninfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_margin="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
